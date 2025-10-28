@@ -1,27 +1,51 @@
-# 2806Memorando
+# 🎬 Memorando
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.1.
+Projeto desenvolvido durante o curso da **Alura** com o objetivo de explorar e aplicar os principais recursos do **módulo de animações do Angular**, criando transições visuais dinâmicas e interativas entre os estados dos componentes.  
 
-## Development server
+O curso apresentou uma visão prática sobre como animar elementos, controlar estados e transições, e tornar a experiência do usuário mais fluida e envolvente.  
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+---
 
-## Code scaffolding
+## ⚙️ Tecnologias e Conceitos Aplicados  
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### 💫 Módulo de Animações do Angular  
+- Importação e configuração do módulo `@angular/animations` no projeto.  
+- Criação e utilização do método `trigger()` para engatilhar animações em componentes.  
 
-## Build
+### 🎭 Estados e Estilos  
+- Definição de estados com o método `state()`.  
+- Aplicação de estilos personalizados para cada estado utilizando `style()`.  
+- Integração do trigger ao template com property binding, controlando o estado da animação dinamicamente.  
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### 🔄 Transições e Duração  
+- Configuração de transições entre estados com o método `transition()`.  
+- Utilização do método `animate()` para controlar duração, timing e estilo da animação.  
+- Aplicação de estilos temporários durante as transições para efeitos mais naturais.  
 
-## Running unit tests
+### 🧩 Reutilização e Organização  
+- Exportação e importação de animações reutilizáveis nos metadados dos componentes.  
+- Separação de código em arquivos específicos para manter a organização e legibilidade.  
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### 🌐 Animações no DOM  
+- Aplicação de animações em elementos adicionados ou removidos do DOM.  
+- Uso dos estados `void` e `*` (coringa) para tratar elementos que entram ou saem da tela.  
+- Melhoria da semântica do código com os aliases `:enter` e `:leave`**, simplificando a leitura e manutenção.  
 
-## Running end-to-end tests
+---
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## 💡 Principais Aprendizados  
 
-## Further help
+Este projeto me permitiu:  
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- Entender em profundidade o módulo de animações do Angular e suas principais funções (`trigger`, `state`, `style`, `transition`, `animate`).  
+- Criar animações declarativas e controladas diretamente no componente, sem necessidade de manipulação direta do DOM.  
+- Sincronizar animações com estados lógicos da aplicação, tornando as interações mais intuitivas e responsivas.  
+- Aprimorar a organização e reuso de animações, mantendo o código mais limpo e sustentável.  
+- Elevar a experiência do usuário (UX) com transições suaves e feedback visual consistente.  
+
+---
+
+📘 **Curso:** Angular: animações — deixe sua aplicação mais interativa e personalizada com animações
+🏫 **Plataforma:** Alura  
+
+---
