@@ -34,6 +34,20 @@
       "statusFinalizado": false,
       "categoria": "Estudos",
       "prioridade": "Alta"
+    },
+    {
+      "id": 7,
+      "descricao": "Reunião Meet",
+      "statusFinalizado": false,
+      "categoria": "Trabalho",
+      "prioridade": "Alta"
+    },
+    {
+      "id": 8,
+      "descricao": "Concluir curso na Alura",
+      "statusFinalizado": false,
+      "categoria": "Estudos",
+      "prioridade": "Normal"
     }
   ]
 }
