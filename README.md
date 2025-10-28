@@ -29,7 +29,7 @@ O curso apresentou uma visão prática sobre como animar elementos, controlar es
 ### 🌐 Animações no DOM  
 - Aplicação de animações em elementos adicionados ou removidos do DOM.  
 - Uso dos estados `void` e `*` (coringa) para tratar elementos que entram ou saem da tela.  
-- Melhoria da semântica do código com os aliases `:enter` e `:leave`**, simplificando a leitura e manutenção.  
+- Melhoria da semântica do código com os aliases `:enter` e `:leave`, simplificando a leitura e manutenção.  
 
 ---
 
@@ -45,7 +45,7 @@ Este projeto me permitiu:
 
 ---
 
-📘 **Curso:** Angular: animações — deixe sua aplicação mais interativa e personalizada com animações
+📘 **Curso:** Angular: animações — deixe sua aplicação mais interativa e personalizada com animações  
 🏫 **Plataforma:** Alura  
 
 ---
