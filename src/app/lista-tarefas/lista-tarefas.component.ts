@@ -1,25 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { state, style, trigger } from '@angular/animations';
 
 import { TarefaService } from 'src/app/service/tarefa.service';
 import { Tarefa } from '../interface/tarefa';
-import { filter } from 'rxjs';
+import { checkButtonTrigger, highlightedStateTrigger, shownStateTrigger } from '../animations';
 
 @Component({
   selector: 'app-lista-tarefas',
   templateUrl: './lista-tarefas.component.html',
   styleUrls: ['./lista-tarefas.component.css'],
-  animations: [trigger('highlightedState', [
-    state('default', style({
-      border: '2px solid #B2B6FF',
-    })),
-    state('highlighted', style({
-      border: '4px solid #B2B6FF',
-      filter: 'brightness(92%)'
-    }))
-  ])]
+  animations: [highlightedStateTrigger, shownStateTrigger, checkButtonTrigger]
 })
 export class ListaTarefasComponent implements OnInit {
   listaTarefas: Tarefa[] = [];
@@ -27,6 +18,7 @@ export class ListaTarefasComponent implements OnInit {
   categoria: string = '';
   validado: boolean = false;
   indexTarefa = -1;
+  id: number = 0;
 
   formulario: FormGroup = this.fomBuilder.group({
     id: [0],
@@ -119,6 +111,7 @@ export class ListaTarefasComponent implements OnInit {
   }
 
   finalizarTarefa(id: number) {
+    this.id = id;
     this.service.buscarPorId(id!).subscribe((tarefa) => {
       this.service.atualizarStatusTarefa(tarefa).subscribe(() => {
         this.listarAposCheck();

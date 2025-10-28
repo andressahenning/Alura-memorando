@@ -18,7 +18,7 @@
       "id": 4,
       "descricao": "Preencher formulário de inscrição",
       "categoria": "Estudos",
-      "statusFinalizado": false,
+      "statusFinalizado": true,
       "prioridade": "Normal"
     },
     {
